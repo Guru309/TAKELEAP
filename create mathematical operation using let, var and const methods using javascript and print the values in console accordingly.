@@ -1,0 +1,9 @@
+var x = 10;
+let y = 20;
+const z = 30;
+
+console.log(x + y + z); // 60
+x = x * 2;
+y = y - 5;
+
+console.log(x, y, z); // 20, 15, 30
