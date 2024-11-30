@@ -1,0 +1,15 @@
+// Map
+const myMap = (arr, func) => arr.map(func);
+console.log(myMap([1, 2, 3], x => x * 2)); // [2, 4, 6]
+
+// Reduce
+const myReduce = (arr, func, initial) => arr.reduce(func, initial);
+console.log(myReduce([1, 2, 3], (acc, x) => acc + x, 0)); // 6
+
+// Filter
+const myFilter = (arr, func) => arr.filter(func);
+console.log(myFilter([1, 2, 3, 4], x => x % 2 === 0)); // [2, 4]
+
+// FlatMap
+const myFlatMap = (arr, func) => arr.flatMap(func);
+console.log(myFlatMap([1, 2, 3], x => [x, x * 2])); // [1, 2, 2, 4, 3, 6]
